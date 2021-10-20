@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Filmy Serialy Hodnotenia</title>
 </head>
 
@@ -16,7 +17,7 @@
         <li class="menu_hidden">
             <span>Filmy</span>
             <ul>
-                <li><span>Sci-fi</span></li>
+                <li><a href="scifi.html">Scifi</a></li>
                 <li><span>Akčné</span></li>
                 <li><span>Historické</span></li>
                 <li><span>Fantasy</span></li>
@@ -33,31 +34,29 @@
         </li>
         <li>
             <input class="searchBar" type="text" placeholder="Vyhľadaj..">
-        </li>
-        <li>
             <button class="searchButton" type="button">Vyhľadaj</button>
         </li>
         <li class="accountSetting menu_hidden">
-            <span>Login</span>
+            <a href="register.html">Register</a>
         </li>
         <li class="accountSetting menu_hidden">
-            <span>Register</span>
+            <a href="login.html">Login</a>
         </li>
         <li id="menu_icon">
             <i class="fa fa-bars"></i>
             <ul>
-                <li class="menu_dropdown_side">
-                    <span>Filmy</span>
-                    <ul>
-                        <li><span>Sci-fi</span></li>
+                <li>
+                    <a href="scifi.html">Filmy</a>
+                    <ul  class="menu_dropdown_side">
+                        <li><a href="scifi.html">Scifi</a></li>
                         <li><span>Akčné</span></li>
                         <li><span>Historické</span></li>
                         <li><span>Fantasy</span></li>
                     </ul>
                 </li>
-                <li class="menu_dropdown_side">
+                <li>
                     <span>Seriály</span>
-                    <ul>
+                    <ul  class="menu_dropdown_side">
                         <li><span>Sci-fi</span></li>
                         <li><span>Akčné</span></li>
                         <li><span>Historické</span></li>
@@ -69,19 +68,17 @@
     </ul>
 </div>
 
-<div class="content">
-    <div class="gallery">
-        <h1>Filmy</h1>
-        <img class="imgShow" src="../image/alita.jpg" alt="film">
-        <img class="imgShow img2" src="../image/avengers_endgame.jpg" alt="film">
-        <img class="imgShow img3"  src="../image/black_widow.jpg" alt="film">
-    </div>
-    <div class="gallery">
-        <h1>Seriály</h1>
-        <img class="imgShow" src="../image/bigBang.jpg" alt="seriál">
-        <img class="imgShow img2" src="../image/revolution.jpg" alt="seriál">
-        <img class="imgShow img3"  src="../image/witcher.jpg" alt="seriál">
-    </div>
+<div class="content_body">
+    <form method="post">
+        <h1 class="register_form center_text login_form">Login</h1>
+        <input type="text" id="inputLogin" class="register_form" placeholder="login" required autofocus name="nick">
+
+        <input type="password" id="inputPassword" class="register_form" placeholder="heslo" required name="password">
+        <div>
+            <button class="register_form button" type="submit" name="login">login</button>
+        </div>
+
+    </form>
 </div>
 
 </body>
